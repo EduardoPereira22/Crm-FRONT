@@ -23,7 +23,7 @@ export default function Home() {
       body: JSON.stringify({ email: userInput, password: passwordInput }),
     };
 
-    fetch("http://localhost:8080/users/login", options)
+    fetch("http://52.67.159.22:8080/users/login", options)
       .then((response) => {
         response.json().then((data) => {
           if (data.token) {
