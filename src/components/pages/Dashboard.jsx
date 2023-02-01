@@ -7,7 +7,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://52.67.159.22:8080/users/all")
+    fetch("http://18.228.213.188:8080/users/all")
       .then((response) => {
         response.json().then((data) => {
           setClientsData(data);
