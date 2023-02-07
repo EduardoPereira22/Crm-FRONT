@@ -30,7 +30,7 @@ export default function Clients() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newClient),
     };
-    fetch("https://18.228.213.188:8080/users/createClient", options)
+    fetch("https://54.94.11.54:8080/users/createClient", options)
       .then(() => {
         setShowAddClient(false);
       })
