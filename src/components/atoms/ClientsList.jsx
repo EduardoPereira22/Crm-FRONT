@@ -8,7 +8,7 @@ export default function ClientsList({}) {
   const [newAmountSpent, setNewAmountSpent] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8080/users/all")
+    fetch("http://54.94.11.54:8080/users/all")
       .then((response) => {
         response.json().then((data) => {
           setClientsData(data);
